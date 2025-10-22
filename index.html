@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MS Next — Your One-Stop Partner for Everything Mystery Shopping</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick Slider JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+
+<body class="font-[Poppins]">
+
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-4 py-4 p-relative">
+            <div class="it-header__logo d-none d-xl-block"><a href="/"><img src="../images/logo-ms.png"
+                        alt="rk-theme"></a></div>
+
+            <div class="hidden md:flex items-center space-x-6 menu-list">
+                <a href="#home" class="py-2 text-[#0d1b73] uppercase">Home</a>
+            <a href="#about" class="py-2 text-[#0d1b73] uppercase">About Us</a>
+            <a href="#services" class="py-2 text-[#0d1b73] uppercase">Services</a>
+            <a href="#Edge" class="py-2 text-[#0d1b73] uppercase">The MS Next Edge</a>
+            <a href="#why-ms-next" class="py-2 text-[#0d1b73] uppercase">Why MS Next</a>
+            </div>
+            <a href="#home" class="it-btn">
+                <span>Contact Us</span>
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="block md:hidden text-[#0d1b73] text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden flex flex-col items-center bg-white shadow-md pb-4">
+            <a href="#home" class="py-2 text-[#0d1b73] uppercase">Home</a>
+            <a href="#about" class="py-2 text-[#0d1b73] uppercase">About Us</a>
+            <a href="#services" class="py-2 text-[#0d1b73] uppercase">Services</a>
+            <a href="#Edge" class="py-2 text-[#0d1b73] uppercase">The MS Next Edge</a>
+            <a href="#why-ms-next" class="py-2 text-[#0d1b73] uppercase">Why MS Next</a>
+            <a href="#home" class="py-2 text-[#0d1b73] uppercase">Contact</a>
+            <a href="#home" class="bg-[#f7931e] mt-2 bg-sky-500 text-white px-5 py-2   hover:bg-sky-600 transition">GET
+                SOLUTION</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home"
+        class="banner relative bg-[url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center text-white min-h-[90vh] py-5 flex items-center">
+        <div class="absolute inset-0 bg-white opacity-10"></div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-7xl mx-auto px-6 relative z-10 banner-content">
+
+            <!-- Left Content -->
+            <div class="flex flex-col justify-center items-start mx-auto lg:mx-0">
+                <h1 class="banner-heading">
+                    MS Next — Your One-Stop Partner for Everything Mystery Shopping </h1>
+                <p class="text-black">
+                    From generating new business to crafting precise reports and finding qualified shoppers — we
+                    redefine what’s possible for Mystery Shopping companies.
+                </p>
+
+
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-5 mt-5">
+                    <a href="#home" class="it-btn">
+                        <span>Discover How</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Right Form -->
+            <div class="bg-white p-[2px] md:p-8 shadow-lg mx-auto form">
+
+                <h2 class="text-[1.6vw] text-center font-extrabold text-blue-950 mt-2">
+                    Get in touch with our team today
+
+                </h2>
+
+                <p class="text-blue-900 mt-2 mb-4 text-center">Let’s take your Mystery Shopping operations to the next
+                    level.</p>
+                <form class="grid grid-cols-1 gap-4 text-black">
+                    <input type="text" placeholder="Your Name*"
+                        class="w-full px-4 py-3   border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#f7931e]">
+                    <input type="email" placeholder="Email Address*"
+                        class="w-full px-4 py-3   border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#f7931e]">
+                    <textarea placeholder="Write Your Message*"
+                        class="w-full px-4 py-3   border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#f7931e] h-32 resize-none"></textarea>
+                    <div class="flex justify-center">
+                        <button type="submit"
+                            class="bg-[#f7931e] hover:bg-orange-600 text-white font-semibold px-6 py-3 shadow transition w-full md:w-auto">
+                            Send Your Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+
+            <!-- Left Image Section -->
+            <div class="relative about-img">
+                <img src="https://images.pexels.com/photos/3182763/pexels-photo-3182763.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Team working" class="  shadow-lg w-full object-cover" />
+
+            </div>
+
+            <!-- Right Text Section -->
+            <div id="about" class="space-y-6">
+
+                <div class="it-about__section-title"><span class="it-section-subtitle">Who We Are</span>
+                    <h4 class="it-section-title">About MS Next</h4>
+                </div>
+
+                <p>At MS Next, we bring the next evolution of support for Mystery Shopping companies worldwide.</p>
+
+                <p>Backed by over a decade of experience through iSN Business Solutions, MS Next is built to simplify,
+                    optimize, and supercharge how MS companies operate — all under one roof.</p>
+
+                <p>Whether it’s generating high-quality business leads, designing efficient forms, editing survey
+                    reports, or recruiting reliable shoppers, our mission is to help MS companies work smarter, deliver
+                    faster, and grow stronger.</p>
+
+                <p>MS Next isn’t just a service provider — it’s your strategic growth partner in the Mystery Shopping
+                    industry.</p>
+
+                <a href="#home" class="it-btn mt-5">
+                    <span>Discover How</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <!-- Our Core Services -->
+    <section id="services" class="py-10 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="it-about__section-title"><span class="it-section-subtitle">How We Help</span>
+                <h4 class="it-section-title">Our Core Services</h4>
+            </div>
+
+
+            <!-- Service Cards Grid -->
+            <div class="service-container mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Card 1 -->
+                <div
+                    class="service-card relative overflow-hidden   shadow-lg group hover:shadow-2xl transition-all duration-300">
+                    <img src="https://images.pexels.com/photos/3183186/pexels-photo-3183186.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        alt="Business Generation"
+                        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="overlay absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent flex flex-col justify-end p-5">
+                        <h3 class="text-2xl inline-block px-4 py-1 font-bold mb-3 shadow-md">
+                            Business Generation</h3>
+                        <p>Unlock new partnerships with top brands.</p>
+                        <p>We help Mystery Shopping companies connect directly with decision-makers who are actively
+                            seeking Mystery Shopping services. Our tailor-made performance marketing strategies,
+                            enhanced by AI-driven targeting, ensure your business is seen by the right people at the
+                            right time.
+                        </p>
+                        <p> <b> Result: More relevant inquiries. More conversions. More business.</b></p>
+
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="service-card relative overflow-hidden   shadow-lg group hover:shadow-2xl transition-all duration-300">
+                    <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        alt="Form Building"
+                        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="overlay absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent flex flex-col justify-end p-5">
+                        <h3 class="text-2xl inline-block px-4 py-1 font-bold mb-3 shadow-md">Form
+                            Building</h3>
+
+                        <p>
+                            Where usability meets precision.</p>
+                        <p>From simple photo QC forms to complex video shop templates — we build custom, data-driven
+                            forms for any industry or platform. Designed for clarity, efficiency, and ease of use, every
+                            form we create ensures seamless data collection and actionable insights for your clients.
+
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="service-card relative overflow-hidden   shadow-lg group hover:shadow-2xl transition-all duration-300">
+                    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        alt="Survey Editing"
+                        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="overlay absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent flex flex-col justify-end p-5">
+                        <h3 class="text-2xl inline-block px-4 py-1   font-bold mb-3 shadow-md">
+                            Survey Form Editing</h3>
+
+                        <p>Accuracy that defines excellence.</p>
+                        <p>With over 10 years of experience, we’ve perfected the art of delivering error-free,
+                            platform-ready reports with a proven accuracy rate of 98%. Whether you work on Sassie,
+                            Shopmetrics, iSecret Shop, or Presto, our expert editors ensure your survey forms are
+                            polished, compliant, and AI-optimized for today’s workflows.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="service-card relative overflow-hidden   shadow-lg group hover:shadow-2xl transition-all duration-300">
+                    <img src="https://images.pexels.com/photos/4069291/pexels-photo-4069291.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        alt="Shopper Connect"
+                        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="overlay absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent flex flex-col justify-end p-5">
+                        <h3 class="text-2xl inline-block px-4 py-1 font-bold mb-3 shadow-md">
+                            Shopper Connect</h3>
+
+
+                        <p>Your solution to shopper scarcity.</p>
+                        <p>Finding reliable shoppers in remote or niche areas is no longer a challenge. Through powerful
+                            AI-powered performance marketing campaigns, we identify, attract, and onboard the right
+                            shoppers that fit your project’s exact needs — so your operations never slow down again.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- The MS Next Edge -->
+    <section id="Edge" class="py-10">
+        <div class="max-w-6xl mx-auto px-6">
+
+            <!-- Section Header -->
+            <div class="text-center mb-14">
+                <div class="it-about__section-title"><span class="it-section-subtitle">The MS Next Edge</span>
+                    <h4 class="it-section-title">Why Leading Mystery Shopping Companies Choose Us</h4>
+                    <p>At MS Next, we don’t just provide services we deliver strategic solutions that drive growth,
+                        efficiency, and results. Here’s what sets us apart:</p>
+                </div>
+
+            </div>
+
+            <!-- Feature Cards -->
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <!-- Card 1 -->
+                <div class="feature-card p-8 flex flex-col items-start">
+                    <div class="emoji">⚡</div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Industry-Focused Expertise</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Every solution we create — from business generation to shopper recruitment —
+                        is built exclusively for the <span class="font-semibold">Mystery Shopping industry</span>.
+                        We know the challenges, the platforms, and what works.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="feature-card p-8 flex flex-col items-start">
+                    <div class="emoji">🤖</div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">AI-Powered Precision</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Our <span class="font-semibold">AI-enhanced targeting and analysis</span> ensures you reach the
+                        right clients,
+                        collect accurate data, and recruit the perfect shoppers — faster and smarter than ever.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="feature-card p-8 flex flex-col items-start">
+                    <div class="emoji">🛠️</div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">End-to-End Support</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        <span class="font-semibold">MS Next</span> is your one-stop partner.
+                        From designing forms to editing reports, generating leads, and connecting with shoppers,
+                        we handle it all — so you can focus on scaling your business.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="feature-card p-8 flex flex-col items-start">
+                    <div class="emoji">🚀</div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Proven Results</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        With 10+ years of experience, thousands of forms built, and hundreds of campaigns executed, our
+                        track record speaks for itself. We don’t just promise results — we deliver measurable growth.
+                    </p>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+    <!-- Why NS Next -->
+    <section id="why-ms-next" class="py-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Section Heading -->
+            <div class="text-center mb-12">
+                <div class="it-about__section-title"><span class="it-section-subtitle">Why MS Next</span>
+                    <h4 class="it-section-title">Tired of struggling with the same industry challenges?</h4>
+                    <p>
+                        We understand the hurdles — and we’ve built MS Next to solve them all.
+                    </p>
+                </div>
+
+            </div>
+
+
+
+            <!-- Problem/Solution Grid -->
+            <section class="card-slider-section">
+               
+                <div class="card-slider">
+                    <div class="card">
+                        <img src="https://plus.unsplash.com/premium_photo-1661764256397-af154e87b1b3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="Finding New Business">
+                        <h3>Finding New Business?</h3>
+                        <p>   We bring top brands and decision-makers straight to your inbox.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1332"
+                            alt="Complex or Inefficient Forms">
+                        <h3>Complex or Inefficient Forms?</h3>
+                        <p>   We build forms that are intuitive, scalable, and built to perform.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://plus.unsplash.com/premium_photo-1683120730432-b5ea74bd9047?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="Inconsistent Report Quality">
+                        <h3>Inconsistent Report Quality?</h3>
+                        <p>   Our editing experts deliver 98% accuracy, every time.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070"
+                            alt="Shopper Shortages in Key Areas">
+                        <h3>Shopper Shortages in Key Areas?</h3>
+                        <p>   Shopper Connect fills the gap with targeted, qualified candidates.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://plus.unsplash.com/premium_photo-1661281350976-59b9514e5364?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1169"
+                            alt="Overwhelmed by Multiple Vendors">
+                        <h3>Overwhelmed by Multiple Vendors?</h3>
+                        <p>   With MS Next, everything you need is under one roof — simple, seamless, and effective.</p>
+                    </div>
+                </div>
+            </section>
+
+      
+            <script>
+                $(document).ready(function () {
+                    $('.card-slider').slick({
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2500,
+                        dots: true,
+                        arrows: true,
+                        infinite: true,
+                        responsive: [
+                            { breakpoint: 1024, settings: { slidesToShow: 2 } },
+                            { breakpoint: 600, settings: { slidesToShow: 1 } }
+                        ]
+                    });
+                });
+            </script>
+
+
+            <div class="cta-banner">
+
+                <div class="">
+                    <p class="text-lg md:text-xl text-gray-800 max-w-2xl mx-auto font-medium">
+                        MS Next empowers Mystery Shopping companies to work
+                        smarter, scale faster, and lead confidently in a competitive market.
+                    </p>
+                </div>
+
+                <a href="#home" class="it-btn it-btn-white">
+                    <span>Discover How</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-modern">
+        <div class="footer-inner">
+
+            <!-- About -->
+            <div class="footer-col about">
+                <img src="images/logo-ms.png" alt="" srcset="">
+                <p>Powered by iSN Business Solutions<br>
+                    Your trusted partner in Mystery Shopping innovation and support.
+
+
+                </p>
+            </div>
+
+            <!-- Useful Links -->
+            <div class="footer-col links">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Edge">The MS Next Edge</a></li>
+                    <li><a href="#why-ms-next">Why MS Next</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us -->
+            <div class="footer-col contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:info@msnext.com">info@msnext.com</a></li>
+                    <li><strong>Phone:</strong> <a href="tel:+912345678900">+91 23456 78900</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 MS Next. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+    <script>
+        const cards = document.querySelectorAll('.service-card');
+        let activeCard = null;
+
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                if (activeCard !== card) {
+                    cards.forEach(c => c.classList.remove('expanded'));
+                    card.classList.add('expanded');
+                    activeCard = card;
+                }
+            });
+        });
+
+        // Optional: set first card as expanded on page load
+        window.addEventListener('load', () => {
+            if (cards.length > 0) {
+                cards[0].classList.add('expanded');
+                activeCard = cards[0];
+            }
+        });
+    </script>
+
+</body>
+
+</html>
