@@ -20,7 +20,13 @@
     "wdth" 100;
 }
 
-
+nav{
+      position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1111;
+    width: 100%;
+}
 .banner-heading {
 color: #fff;
     font-weight: 900;
@@ -29,7 +35,10 @@ color: #fff;
     margin-bottom: 1rem;
 
 }
-
+.banner {
+  margin-top: 100px;
+  background-image: url(images/banner.webp);
+}
 .banner::after{
   content: "";
   position: absolute;
@@ -117,21 +126,19 @@ color: #fff;
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%;
+    width: 15%;
     height: calc(100% + 25px);
     background-color: var(--it-primary);
     transform: skew(15deg);
 }
 
 .it-header__logo {
-    position: absolute;
-    top: 0;
-    left: 15px;
     height: 100%;
     z-index: 55;
-    padding: 28px 50px;
+    width: 15%;
+    margin-left: 20px;
+    margin-top: 20px;
 }
-
 .it-header__logo img {
  width: 100px;
     z-index: 111;
@@ -149,7 +156,6 @@ color: #fff;
     align-items: center;
     width: 100%;
     justify-content: center;
-    margin-left: 120px;
 }
 .menu-list a{
   position: relative;
@@ -316,7 +322,7 @@ p {
 .it-section-subtitle {
   display: inline-block;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--it-secondary);
   text-transform: uppercase;
   padding-bottom: 15px;
@@ -532,7 +538,8 @@ p {
                 .card-slider .card img {
                         width: 100%;
     margin-bottom: 15px;
-    height: 270px;
+    height: 350px;
+    object-fit: cover;
                 }
 
                 .card-slider .card h3 {
