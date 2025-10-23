@@ -96,6 +96,8 @@ color: #fff;
     position: relative;
     z-index: 2;
     color: #fff;
+        display: block;
+    width: max-content;
 }
 
 .it-btn-white span {
@@ -141,10 +143,13 @@ color: #fff;
 }
 
 .menu-list{
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
-  margin: auto  ;
+    display: flex
+;
+    gap: 1.5rem;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-left: 120px;
 }
 .menu-list a{
   position: relative;
