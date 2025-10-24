@@ -29,42 +29,53 @@
 
 <body class="font-[Poppins]">
 
+<nav class="bg-white shadow-md fixed w-full top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center px-4 py-4 relative">
+    <div class="it-header__logo d-none d-xl-block">
+      <a href="/"><img src="../images/logo-ms.png" alt="rk-theme" /></a>
+    </div>
 
-    <!-- Navbar -->
-    <nav class="bg-white shadow-md">
-        <div class="container mx-auto flex justify-between items-center px-4 py-4 p-relative">
-            <div class="it-header__logo d-none d-xl-block"><a href="/"><img src="../images/logo-ms.png"
-                        alt="rk-theme"></a></div>
+    <div class="hidden md:flex items-center space-x-6 menu-list">
+      <a href="#home" class="py-2 text-[#0d1b73] uppercase">Home</a>
+      <a href="#about" class="py-2 text-[#0d1b73] uppercase">About Us</a>
+      <a href="#services" class="py-2 text-[#0d1b73] uppercase">Services</a>
+      <a href="#Edge" class="py-2 text-[#0d1b73] uppercase">The MS Next Edge</a>
+      <a href="#why-ms-next" class="py-2 text-[#0d1b73] uppercase">Why MS Next</a>
+    </div>
 
-            <div class="hidden md:flex items-center space-x-6 menu-list">
-                <a href="#home" class="py-2 text-[#0d1b73] uppercase">Home</a>
-                <a href="#about" class="py-2 text-[#0d1b73] uppercase">About Us</a>
-                <a href="#services" class="py-2 text-[#0d1b73] uppercase">Services</a>
-                <a href="#Edge" class="py-2 text-[#0d1b73] uppercase">The MS Next Edge</a>
-                <a href="#why-ms-next" class="py-2 text-[#0d1b73] uppercase">Why MS Next</a>
-            </div>
-            <a href="#home" class="it-btn">
-                <span>Contact Us</span>
-            </a>
+    <a href="#home" class="it-btn hidden md:inline-block header-cta">
+      <span>Contact Us</span>
+    </a>
 
-            <!-- Mobile Menu Button -->
-            <button id="menu-btn" class="block md:hidden text-[#0d1b73] text-2xl">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </div>
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="block md:hidden text-[#0d1b73] text-2xl focus:outline-none relative">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+  </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden flex flex-col items-center bg-white shadow-md pb-4">
-            <a href="#home" class="py-2 text-[#0d1b73] uppercase">Home</a>
-            <a href="#about" class="py-2 text-[#0d1b73] uppercase">About Us</a>
-            <a href="#services" class="py-2 text-[#0d1b73] uppercase">Services</a>
-            <a href="#Edge" class="py-2 text-[#0d1b73] uppercase">The MS Next Edge</a>
-            <a href="#why-ms-next" class="py-2 text-[#0d1b73] uppercase">Why MS Next</a>
-            <a href="#home" class="py-2 text-[#0d1b73] uppercase">Contact</a>
-            <a href="#home" class="bg-[#f7931e] mt-2 bg-sky-500 text-white px-5 py-2   hover:bg-sky-600 transition">GET
-                SOLUTION</a>
-        </div>
-    </nav>
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    class="mobile-menu hidden md:hidden flex flex-col items-center bg-white shadow-md pb-4 transition-all duration-500 ease-in-out"
+  >
+    <a href="#home" class="py-2 text-[#0d1b73] uppercase">Home</a>
+    <a href="#about" class="py-2 text-[#0d1b73] uppercase">About Us</a>
+    <a href="#services" class="py-2 text-[#0d1b73] uppercase">Services</a>
+    <a href="#Edge" class="py-2 text-[#0d1b73] uppercase">The MS Next Edge</a>
+    <a href="#why-ms-next" class="py-2 text-[#0d1b73] uppercase">Why MS Next</a>
+    <a href="#home" class="py-2 text-[#0d1b73] uppercase">Contact</a>
+    <a
+      href="#home"
+      class="bg-[#f7931e] mt-2 text-white px-5 py-2 hover:bg-[#e67c00] transition"
+      >GET SOLUTION</a
+    >
+  </div>
+</nav>
+
 
     <!-- Hero Section -->
     <section id="home" class="banner relative bg-cover bg-center text-white min-h-[90vh] py-5 flex items-center">
@@ -90,9 +101,9 @@
             </div>
 
             <!-- Right Form -->
-            <div class="bg-white p-[2px] md:p-8 shadow-lg mx-auto form">
+            <div class="bg-white p-[20px] md:p-8 shadow-lg mx-auto form">
 
-                <h2 class="text-[2vw] text-center font-extrabold text-blue-950 mt-2 mb-7">
+                <h2 class="md:text-[2vw] text-[8vw] text-center font-extrabold text-blue-950 mt-2 mb-7">
                     Let's Connect
                 </h2>
 
@@ -123,7 +134,7 @@
 
     <!-- Submit Button -->
     <div class="flex justify-center">
-        <button type="submit" class="bg-[#f7931e] hover:bg-orange-600 text-white font-semibold  mt-8 px-6 py-3 shadow transition w-full md:w-auto">
+        <button type="submit" class="bg-[#f7931e] hover:bg-orange-600 text-white font-semibold  md:mt-8 mt-0 px-6 py-3 shadow transition w-full md:w-auto">
             Submit
         </button>
     </div>
@@ -450,13 +461,18 @@
 
 
 
-    <script>
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+ <script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const hamburger = document.querySelector(".hamburger");
+
+  menuBtn.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    mobileMenu.classList.toggle("show");
+  });
     </script>
+
+
     <script>
         const cards = document.querySelectorAll('.service-card');
         let activeCard = null;
