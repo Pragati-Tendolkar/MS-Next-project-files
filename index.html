@@ -38,10 +38,10 @@
 
             <div class="hidden md:flex items-center space-x-6 menu-list">
                 <a href="#home" class="py-2 text-[#0d1b73] uppercase">Home</a>
-            <a href="#about" class="py-2 text-[#0d1b73] uppercase">About Us</a>
-            <a href="#services" class="py-2 text-[#0d1b73] uppercase">Services</a>
-            <a href="#Edge" class="py-2 text-[#0d1b73] uppercase">The MS Next Edge</a>
-            <a href="#why-ms-next" class="py-2 text-[#0d1b73] uppercase">Why MS Next</a>
+                <a href="#about" class="py-2 text-[#0d1b73] uppercase">About Us</a>
+                <a href="#services" class="py-2 text-[#0d1b73] uppercase">Services</a>
+                <a href="#Edge" class="py-2 text-[#0d1b73] uppercase">The MS Next Edge</a>
+                <a href="#why-ms-next" class="py-2 text-[#0d1b73] uppercase">Why MS Next</a>
             </div>
             <a href="#home" class="it-btn">
                 <span>Contact Us</span>
@@ -67,8 +67,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home"
-        class="banner relative bg-cover bg-center text-white min-h-[90vh] py-5 flex items-center">
+    <section id="home" class="banner relative bg-cover bg-center text-white min-h-[90vh] py-5 flex items-center">
         <div class="absolute inset-0 bg-white opacity-10"></div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-7xl mx-auto px-6 relative z-10 banner-content">
 
@@ -93,64 +92,43 @@
             <!-- Right Form -->
             <div class="bg-white p-[2px] md:p-8 shadow-lg mx-auto form">
 
-                <h2 class="text-[2vw] text-center font-extrabold text-blue-950 mt-2">
-                   Let's Connect
+                <h2 class="text-[2vw] text-center font-extrabold text-blue-950 mt-2 mb-7">
+                    Let's Connect
                 </h2>
 
-                <p class="text-blue-900 mt-2 mb-4 text-center">Let’s take your Mystery Shopping operations to the next
+                <p class="text-blue-900 mt-2 mb-4 text-center font-bold">Let’s take your Mystery Shopping operations to
+                    the next
                     level.</p>
-             <form class="grid grid-cols-1 gap-4 text-black">
-  <!-- Name -->
-  <input
-    type="text"
-    placeholder="Your Name*"
-    class="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#f7931e]"
-  />
+<form class="grid grid-cols-1 gap-4 text-black">
+    <!-- Name -->
+    <input type="text" placeholder="Your Name*" class="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#f7931e]" />
 
-  <!-- Phone -->
-  <input
-    type="tel"
-    placeholder="Phone Number*"
-    class="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#f7931e]"
-  />
+    <!-- Phone -->
+    <input type="tel" placeholder="Phone Number*" class="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#f7931e]" />
 
-  <!-- Email -->
-  <input
-    type="email"
-    placeholder="Email Address*"
-    class="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#f7931e]"
-  />
+    <!-- Email -->
+    <input type="email" placeholder="Email Address*" class="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#f7931e]" />
 
-  <!-- Company Name -->
-  <input
-    type="text"
-    placeholder="Company Name*"
-    class="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#f7931e]"
-  />
+    <!-- Company Name -->
+    <input type="text" placeholder="Company Name*" class="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#f7931e]" />
 
-  <!-- Service Required -->
-  <input
-    type="text"
-    placeholder="Service Required*"
-    class="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#f7931e]"
-  />
+    <!-- Service Required (Dropdown) -->
+    <select class="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#f7931e] text-gray-700">
+        <option value="" disabled selected>Select Service Required*</option>
+        <option value="Business generation">Business Generation</option>
+        <option value="Form building">Form Building</option>
+        <option value="Survey form editing">Survey Form Editing</option>
+        <option value="Shopper recruitment">Shopper Recruitment</option>
+    </select>
 
-  <!-- Message -->
-  <!-- <textarea
-    placeholder="Write Your Message*"
-    class="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#f7931e] h-32 resize-none"
-  ></textarea> -->
-
-  <!-- Submit Button -->
-  <div class="flex justify-center">
-    <button
-      type="submit"
-      class="bg-[#f7931e] hover:bg-orange-600 text-white font-semibold px-6 py-3 shadow transition w-full md:w-auto"
-    >
-      Send Your Message
-    </button>
-  </div>
+    <!-- Submit Button -->
+    <div class="flex justify-center">
+        <button type="submit" class="bg-[#f7931e] hover:bg-orange-600 text-white font-semibold  mt-8 px-6 py-3 shadow transition w-full md:w-auto">
+            Submit
+        </button>
+    </div>
 </form>
+
 
             </div>
 
@@ -163,8 +141,7 @@
 
             <!-- Left Image Section -->
             <div class="relative about-img">
-                <img src="images/AboutMSNext.webp"
-                    alt="Team working" class="  shadow-lg w-full object-cover" />
+                <img src="images/AboutMSNext.webp" alt="Team working" class="  shadow-lg w-full object-cover" />
 
             </div>
 
@@ -208,8 +185,7 @@
                 <!-- Card 1 -->
                 <div
                     class="service-card relative overflow-hidden   shadow-lg group hover:shadow-2xl transition-all duration-300">
-                    <img src="images/BusinessGeneration.webp"
-                        alt="Business Generation"
+                    <img src="images/BusinessGeneration.webp" alt="Business Generation"
                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                     <div
                         class="overlay absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent flex flex-col justify-end p-5">
@@ -229,8 +205,7 @@
                 <!-- Card 2 -->
                 <div
                     class="service-card relative overflow-hidden   shadow-lg group hover:shadow-2xl transition-all duration-300">
-                    <img src="images/FormBuilding.webp"
-                        alt="Form Building"
+                    <img src="images/FormBuilding.webp" alt="Form Building"
                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                     <div
                         class="overlay absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent flex flex-col justify-end p-5">
@@ -251,8 +226,7 @@
                 <!-- Card 3 -->
                 <div
                     class="service-card relative overflow-hidden   shadow-lg group hover:shadow-2xl transition-all duration-300">
-                    <img src="images/SurveyFormEditing.webp"
-                        alt="Survey Editing"
+                    <img src="images/SurveyFormEditing.webp" alt="Survey Editing"
                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                     <div
                         class="overlay absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent flex flex-col justify-end p-5">
@@ -272,8 +246,7 @@
                 <!-- Card 4 -->
                 <div
                     class="service-card relative overflow-hidden   shadow-lg group hover:shadow-2xl transition-all duration-300">
-                    <img src="images/ShopperConnect.webp"
-                        alt="Shopper Connect"
+                    <img src="images/ShopperConnect.webp" alt="Shopper Connect"
                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
                     <div
                         class="overlay absolute inset-0 bg-gradient-to-t from-blue-950/70 to-transparent flex flex-col justify-end p-5">
@@ -379,44 +352,41 @@
 
             <!-- Problem/Solution Grid -->
             <section class="card-slider-section">
-               
+
                 <div class="card-slider">
                     <div class="card">
                         <img src="images/Finding.webp" alt="Finding New Business">
                         <h3>Finding New Business?</h3>
-                        <p>   We bring top brands and decision-makers straight to your inbox.</p>
+                        <p> We bring top brands and decision-makers straight to your inbox.</p>
                     </div>
 
                     <div class="card">
-                        <img src="images/Complex.webp"
-                            alt="Complex or Inefficient Forms">
+                        <img src="images/Complex.webp" alt="Complex or Inefficient Forms">
                         <h3>Complex or Inefficient Forms?</h3>
-                        <p>   We build forms that are intuitive, scalable, and built to perform.</p>
+                        <p> We build forms that are intuitive, scalable, and built to perform.</p>
                     </div>
 
                     <div class="card">
                         <img src="images/Inconsistent.webp" alt="Inconsistent Report Quality">
                         <h3>Inconsistent Report Quality?</h3>
-                        <p>   Our editing experts deliver 98% accuracy, every time.</p>
+                        <p> Our editing experts deliver 98% accuracy, every time.</p>
                     </div>
 
                     <div class="card">
-                        <img src="images/Shopper.webp"
-                            alt="Shopper Shortages in Key Areas">
+                        <img src="images/Shopper.webp" alt="Shopper Shortages in Key Areas">
                         <h3>Shopper Shortages in Key Areas?</h3>
-                        <p>   Shopper Connect fills the gap with targeted, qualified candidates.</p>
+                        <p> Shopper Connect fills the gap with targeted, qualified candidates.</p>
                     </div>
 
                     <div class="card">
-                        <img src="images/Overwhelmed.webp"
-                            alt="Overwhelmed by Multiple Vendors">
+                        <img src="images/Overwhelmed.webp" alt="Overwhelmed by Multiple Vendors">
                         <h3>Overwhelmed by Multiple Vendors?</h3>
-                        <p>   With MS Next, everything you need is under one roof — simple, seamless, and effective.</p>
+                        <p> With MS Next, everything you need is under one roof — simple, seamless, and effective.</p>
                     </div>
                 </div>
             </section>
 
-      
+
 
 
 
@@ -511,20 +481,20 @@
 
 
         $(document).ready(function () {
-                    $('.card-slider').slick({
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        autoplaySpeed: 2500,
-                        dots: true,
-                        arrows: true,
-                        infinite: true,
-                        responsive: [
-                            { breakpoint: 1024, settings: { slidesToShow: 2 } },
-                            { breakpoint: 600, settings: { slidesToShow: 1 } }
-                        ]
-                    });
-                });
+            $('.card-slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2500,
+                dots: true,
+                arrows: true,
+                infinite: true,
+                responsive: [
+                    { breakpoint: 1024, settings: { slidesToShow: 2 } },
+                    { breakpoint: 600, settings: { slidesToShow: 1 } }
+                ]
+            });
+        });
     </script>
 
 </body>
