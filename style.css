@@ -771,6 +771,43 @@ p {
   color: #007bff;
 }
 
+
+  .sticky-rotated {
+position: fixed;
+    right: -60px;
+    top: 50%;
+    rotate: 90deg;
+    transform-origin: center;
+    background: #f7931e;
+    color: #fff;
+    padding: 50px 10px 10px 10px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    z-index: 9999;
+    transition: transform 0.18s 
+ease, background 0.18s 
+ease;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .sticky-rotated:hover {
+    transform: scale(1.06);
+    background: #ff8a1a;
+  }
+
+  /* Hide on very small screens if you prefer */
+  @media (max-width: 420px) {
+    .sticky-rotated { display: none; }
+  }
+
+
+
 /* Responsive */
 @media (max-width:1024px) {
   .card-slider .card {
@@ -842,23 +879,6 @@ p {
 .footer-col img {
     width: 160px;
     margin: auto;
-    padding-right: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
