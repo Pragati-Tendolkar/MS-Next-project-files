@@ -109,7 +109,7 @@ nav {
 }
 
 .banner {
-  margin-top: 80px;
+  margin-top: 70px;
   background-image: url(images/banner.webp);
 }
 
@@ -204,8 +204,8 @@ nav {
   top: 0;
   left: 0;
   height: 100%;
-  width: 15%;
-  height: calc(100% + 15px);
+  width: 13%;
+  height: calc(100% + 10px);
   background-color: var(--it-primary);
   transform: skew(15deg);
 }
@@ -219,7 +219,7 @@ nav {
 }
 
 .it-header__logo img {
-  width: 120px;
+  width: 100px;
   z-index: 111;
   position: relative;
 }
